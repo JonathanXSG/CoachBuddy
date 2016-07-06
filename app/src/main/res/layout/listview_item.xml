@@ -27,10 +27,40 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/dates"
-                android:id="@+id/view_workout_dates"
-                android:layout_marginTop="5dp"
-                android:layout_column="0" />
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="S"
+                android:id="@+id/textview_sun"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="M"
+                android:id="@+id/textview_mon"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="T"
+                android:id="@+id/textview_tue"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="W"
+                android:id="@+id/textview_wed"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            
 
             <TextView
                 android:layout_width="wrap_content"
