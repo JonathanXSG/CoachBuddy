@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.54"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:collapseColumns="y"
+        android:shrinkColumns="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/workout_name"
+            android:id="@+id/view_workout_name" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dates"
+                android:id="@+id/view_workout_dates"
+                android:layout_marginTop="5dp"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:id="@+id/view_workout_time"
+                android:layout_column="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:id="@+id/switch1"
+        android:checked="true"
+        android:layout_weight="0.18"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

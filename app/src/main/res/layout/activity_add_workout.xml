@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddWorkout"
+    android:weightSum="1">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/workout.name"
+        android:layout_gravity="center_horizontal"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:minLines="1"
+        android:hint="@string/workout_name" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:forceHasOverlappingRendering="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="S"
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_sun"
+                android:checked="false"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="M"
+                android:id="@+id/textView8"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_mon"
+                android:checked="false"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="T"
+                android:id="@+id/textView9"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_tue"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="W"
+                android:id="@+id/textView10"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_wed"
+                android:checked="false"
+                android:layout_gravity="center_horizontal"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="T"
+                android:id="@+id/textView11"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_thu"
+                android:checked="false"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="F"
+                android:id="@+id/textView12"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_fri"
+                android:checked="false"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:measureWithLargestChild="false"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="S"
+                android:id="@+id/textView13"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workout_sat"
+                android:checked="false"
+                android:onClick="buttonClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="122dp"
+        android:id="@+id/workout_time_picker"
+        android:timePickerMode="spinner" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/workout_description"
+        android:ems="10"
+        android:maxLength="100"
+        android:lines="5"
+        android:maxLines="2"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="@string/description" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:id="@+id/button_add"
+        android:layout_gravity="center_horizontal"
+        android:enabled="false"
+        android:onClick="addButtonConfirmation"/>
+
+
+</LinearLayout>
