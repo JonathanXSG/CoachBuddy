@@ -27,8 +27,6 @@ public class AddWorkout extends AppCompatActivity {
     List<Workouts> workoutList = new ArrayList<Workouts>();
     ListView workoutListView;
 
-    int pruebade;
-
     EditText workoutName, workoutDesc;
     Button addButton;
     TimePicker workoutTimePicker;
