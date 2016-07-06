@@ -60,7 +60,32 @@
                 android:textAlignment="center"
                 android:width="30dp" />
 
-            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="T"
+                android:id="@+id/textview_thu"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="F"
+                android:id="@+id/textview_fri"
+                android:textAlignment="center"
+                android:width="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="S"
+                android:id="@+id/textview_sat"
+                android:textAlignment="center"
+                android:width="30dp" />
 
             <TextView
                 android:layout_width="wrap_content"
