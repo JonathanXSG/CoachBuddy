@@ -38,7 +38,7 @@ public class AddWorkout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_workout);
 
-        workoutListView = (ListView) findViewById(R.id.listView);
+        workoutListView = (ListView) findViewById(R.id.listview_mainmenu);
 
         workoutName = (EditText) findViewById(R.id.workout_name);
         workoutDesc = (EditText) findViewById(R.id.workout_description);
@@ -64,8 +64,8 @@ public class AddWorkout extends AppCompatActivity {
     public void addButtonConfirmation(View view) {
         workoutTime[0] = workoutTimePicker.getCurrentHour();
         workoutTime[1] = workoutTimePicker.getCurrentMinute();
-        Toast.makeText(getApplicationContext(),"Workout "+workoutDate[0]+workoutDate[1]+" has been added",Toast.LENGTH_SHORT).show();
-        workoutList.add(new Workouts(workoutName.toString(),workoutTime,workoutDate, workoutDesc.toString()));
+        Toast.makeText(getApplicationContext(),"Workout "+workoutName+" has been added",Toast.LENGTH_SHORT).show();
+        workoutList.add(new Workouts(workoutName.getText().toString()));
         //populateList();
         Intent openActivity = new Intent(view.getContext(),MainMenu.class);
         view.getContext().startActivity(openActivity);
@@ -107,8 +107,8 @@ public class AddWorkout extends AppCompatActivity {
             super(getApplicationContext(),R.layout.listview_item,workoutList);
         }
 
-        @Override
-        public View getView(int position, View view, ViewGroup parent) {
+        //@Override
+        public View getView1(int position, View view, ViewGroup parent) {
             if(view==null){
                 view = getLayoutInflater().inflate(R.layout.listview_item, parent,false );
             }
@@ -116,7 +116,7 @@ public class AddWorkout extends AppCompatActivity {
             Workouts currentWorkout = workoutList.get(position);
 
             TextView name = (TextView) view.findViewById(R.id.view_workout_name);
-            name.setText(currentWorkout.getname());
+            name.setText(currentWorkout.getName());
 
             return view;
         }

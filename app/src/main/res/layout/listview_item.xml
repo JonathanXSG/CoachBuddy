@@ -13,103 +13,19 @@
         android:collapseColumns="y"
         android:shrinkColumns="3">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/workout_name"
-            android:id="@+id/view_workout_name" />
-
         <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="S"
-                android:id="@+id/textview_sun"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
+                android:text="@string/workout_name"
+                android:id="@+id/view_workout_name" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="M"
-                android:id="@+id/textview_mon"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="T"
-                android:id="@+id/textview_tue"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="W"
-                android:id="@+id/textview_wed"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="T"
-                android:id="@+id/textview_thu"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="F"
-                android:id="@+id/textview_fri"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="S"
-                android:id="@+id/textview_sat"
-                android:textAlignment="center"
-                android:width="30dp"
-                android:paddingTop="5dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time"
-                android:id="@+id/view_workout_time"
-                android:paddingLeft="20dp"
-                android:paddingTop="5dp" />
         </TableRow>
-    </TableLayout>
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:id="@+id/switch1"
-        android:checked="true"
-        android:layout_weight="0.18"
-        android:layout_marginTop="20dp" />
+    </TableLayout>
 
 </LinearLayout>

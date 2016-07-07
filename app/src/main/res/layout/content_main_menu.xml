@@ -12,26 +12,20 @@
     tools:context="bulldogcoders.coachbuddy.MainMenu"
     tools:showIn="@layout/activity_main_menu">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout">
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_mainmenu"
+        android:layout_marginBottom="50dp" />
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="383dp"
-            android:id="@+id/listView" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/add_workout"
-            android:id="@+id/button_add_workout"
-            android:layout_gravity="center_horizontal"
-            android:onClick="AddNewWorkout" />
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_workout"
+        android:id="@+id/button_add_workout"
+        android:layout_gravity="center_horizontal"
+        android:onClick="AddNewWorkout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -5,27 +5,16 @@ package bulldogcoders.coachbuddy;
  */
 public class Workouts {
 
-    private String _name, _description;
-    private int[] _time= new int[2];
-    private boolean[] _dates= new boolean[7];
+    private String name, description;
+    private int[] time = new int[2];
+    private boolean[] dates = new boolean[7];
 
-    public Workouts(String name, int[] time, boolean[] dates, String description){
-        _name=name;
-        _description=description;
-        _time=time;
-        _dates=dates.clone();
+    public Workouts(String name) {
+        this.name = name;
     }
 
-    public String getname(){
-        return _name;
-    }
-    public String getdescription(){
-        return _description;
-    }
-    public int[] gettime(){
-        return _time;
-    }
-    public boolean[] getdates(){
-        return _dates;
+
+    public String getName() {
+        return name;
     }
 }
